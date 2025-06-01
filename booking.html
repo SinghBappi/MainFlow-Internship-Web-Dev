@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact MyRestaurant</title>
+    <title>Booking MyRestaurant</title>
 </head>
 
-<body bgcolor="teal">
+<body bgcolor="gold">
     <header>
         <div class="logo">🍽️My Restaurant</div>
+
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -19,15 +20,18 @@
                 <li><a href="booking.html">BOOK NOW!!!</a></li>
             </ul>
         </nav>
-
     </header>
     <section class="content-section">
-        <h1>Contact Us!</h1>
-        <form action="contact-form">
+        <h1>Book a Table</h1>
+        <form action="#php" class="contact-form">
             <input type="text" placeholder="Enter Your Name" required>
             <input type="email" placeholder="Enter Your E-mail" required>
-            <textarea name="" id="" rows="5" placeholder="Enter Your Message" required></textarea>
-            <button type="submit">Submit</button>
+            <!-- <textarea name="" id="" rows="5" placeholder="Enter Your Message" required></textarea> -->
+             <input type="date" required>
+             <input type="time" required>
+             <input type="number" required placeholder="Guests" min="1" max="20">
+
+            <button type="submit">Book Now!</button>
             <footer>
                 <p>&copy Copy Rights has Taken By Owner Of This Restaurant <br>
                     <a href="Terms.html">Terms & Conditions Apply</a>
@@ -37,9 +41,8 @@
             </footer>
 
         </form>
-
-
     </section>
+
 </body>
 
 </html>
