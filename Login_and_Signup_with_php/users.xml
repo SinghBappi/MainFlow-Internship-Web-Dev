@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 5.2.1
+- https://www.phpmyadmin.net
+-
+- Host: 127.0.0.1:3306
+- Generation Time: Jun 13, 2025 at 12:36 PM
+- Server version: 9.1.0
+- PHP Version: 8.3.14
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="user_auth" collation="utf8mb4_0900_ai_ci" charset="utf8mb4">
+            <pma:table name="users">
+                CREATE TABLE `users` (
+                  `id` int NOT NULL AUTO_INCREMENT,
+                  `username` varchar(44) NOT NULL,
+                  `email` varchar(66) NOT NULL,
+                  `password` varchar(77) NOT NULL,
+                  PRIMARY KEY (`id`),
+                  UNIQUE KEY `username` (`username`),
+                  UNIQUE KEY `email` (`email`)
+                ) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'user_auth'
+    -->
+    <database name="user_auth">
+        <!-- Table users -->
+        <table name="users">
+            <column name="id">1</column>
+            <column name="username">bappi</column>
+            <column name="email">bappisingh1234567@gmail.com</column>
+            <column name="password">$2y$10$QzVFYtfuTTRpwKDqZbA8qOY/ODMXQ8AooZsnV2fARPiISguYKCAHG</column>
+        </table>
+        <table name="users">
+            <column name="id">2</column>
+            <column name="username">yash</column>
+            <column name="email">yash123@gmail.com</column>
+            <column name="password">$2y$10$sNdRW4w4NSIWCoFnudSG7Ox9nxwlY0ZG0ypRos9/rv9HQ9oO5tkQy</column>
+        </table>
+        <table name="users">
+            <column name="id">3</column>
+            <column name="username">raju</column>
+            <column name="email">raju1223@gmail.com</column>
+            <column name="password">$2y$10$huqYm.T6O4sO/83oqvVu5ualGEmnBEAB4603HYuNPAGiemOmcBmZW</column>
+        </table>
+    </database>
+</pma_xml_export>
