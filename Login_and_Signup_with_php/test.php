@@ -7,7 +7,6 @@ else{
     echo "Connected Successfully !";
 }
 
-// connection done 
-// successfully connected with mysql through wampserver
+
 
 ?>
